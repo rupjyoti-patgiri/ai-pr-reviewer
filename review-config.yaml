@@ -1,0 +1,57 @@
+# ──────────────────────────────────────────────
+# AI PR Reviewer Configuration
+# ──────────────────────────────────────────────
+
+# AI Provider settings
+ai:
+  provider: "openai"            # openai | anthropic (future)
+  model: "gpt-4o"
+  temperature: 0.1
+  maxTokensPerRequest: 4096
+
+# File filtering
+files:
+  maxChangedLines: 500          # Skip files with more changes than this
+  maxFileSize: 10000            # Skip files larger than N lines total
+  ignorePatterns:
+    - "**/*.lock"
+    - "**/package-lock.json"
+    - "**/yarn.lock"
+    - "**/pnpm-lock.yaml"
+    - "**/*.min.js"
+    - "**/*.min.css"
+    - "**/*.map"
+    - "**/dist/**"
+    - "**/build/**"
+    - "**/node_modules/**"
+    - "**/*.png"
+    - "**/*.jpg"
+    - "**/*.jpeg"
+    - "**/*.gif"
+    - "**/*.svg"
+    - "**/*.ico"
+    - "**/*.woff"
+    - "**/*.woff2"
+    - "**/*.ttf"
+    - "**/*.eot"
+    - "**/*.mp4"
+    - "**/*.mp3"
+    - "**/*.pdf"
+    - "**/*.zip"
+    - "**/*.tar.gz"
+  includePatterns: []           # If non-empty, ONLY review matching files
+    # - "src/**"
+    # - "lib/**"
+
+# Review behavior
+review:
+  maxCommentsPerFile: 15
+  maxTotalComments: 50
+  minSeverityToComment: "suggestion"   # critical | warning | suggestion
+  autoRequestChanges: true              # Auto REQUEST_CHANGES on critical issues
+  includePraise: true                   # Include positive feedback comments
+
+# Rate limiting
+rateLimit:
+  maxConcurrentReviews: 3
+  delayBetweenApiCalls: 500    # ms between sequential API calls
