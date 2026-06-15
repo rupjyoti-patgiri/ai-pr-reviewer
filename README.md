@@ -4,10 +4,10 @@
 
 ### Automated AI-Powered Code Review for GitHub Pull Requests
 
-[![Node.js](https://img.shields.io/badge/Node.js-20+-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)…
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6?style=for-the-badge&logo=typescript&logoColor=wh…
-[![Express](https://img.shields.io/badge/Express.js-4.x-000000?style=for-the-badge&logo=express&logoColor=white…
-[![GitHub App](https://img.shields.io/badge/GitHub-App-181717?style=for-the-badge&logo=github&logoColor=white)](ht…
+[![Node.js](https://img.shields.io/badge/Node.js-20+-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Express](https://img.shields.io/badge/Express.js-4.x-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
+[![GitHub App](https://img.shields.io/badge/GitHub-App-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/apps)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
 **An intelligent GitHub App that automatically reviews pull requests using LLMs — catching bugs, security issues, and performance problems before they reach production.**
